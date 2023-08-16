@@ -136,6 +136,7 @@ public class VisionCameraCodeScannerPlugin extends FrameProcessorPlugin {
               formats[0],
               Arrays.copyOfRange(formats, 1, formatsIndex)
             )
+            .enableAllPotentialBarcodes()
             .build());
         barcodeScannerFormatsBitmap = formatsBitmap;
       }
